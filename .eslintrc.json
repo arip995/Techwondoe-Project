@@ -35,7 +35,7 @@
                 "ignoreTypeReferences": false
             }
         ],
-        "react/tsx-filename-extension": [
+        "react/jsx-filename-extension": [
             "warn",
             {
                 "extensions": [
