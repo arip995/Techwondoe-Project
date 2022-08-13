@@ -24,11 +24,20 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
-### Deployment
+### Deployment 
 
-1.Create an account on heroku 
-2.Create a new project
-3.Connect with github
-4.Select the repository
-5.Select the branch for deployment
-6.Then click on deploy
+
+#### heroku with heroku git
+1.Create an account on heroku
+3.Install and login with heroku CLI
+2.Create a new project in heroku
+4.Connect with heroku repository
+5.Push the changes to heroku
+
+### Commands
+1.heroku create -a <app-name>
+2.git init
+3.heroku git:remote -a <app-name>
+4.heroku buildpacks:set mars/create-react-app
+5.git commit -am "my commit"
+6.git push heroku main
